@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Loading() {
   return (
     <View style={styles.container}>
-      <Text>Получение погоды...</Text>
+      <Text style={styles.text}>Получение погоды...</Text>
     </View>
   );
 }
@@ -13,6 +13,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'flex-end',
-    padding: 30,
+    paddingHorizontal: 30,
+    paddingVertical: 100,
+    backgroundColor: '#FDF6AA',
+  },
+  text: {
+    fontSize: 25,
   },
 });
